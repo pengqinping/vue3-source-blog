@@ -30,7 +30,7 @@ vue3-source-blog/
 ├── covers/       12 张公众号封面（1200×512，Chrome headless 生成）
 ├── diagrams/     13 张 mermaid 图示源码（.mmd）+ 渲染 PNG
 ├── demos/        9 个 mini 实现，node 直接运行（零依赖）
-├── source-ref/   v3.5.46 真实源码备份（28 个文件，摘录出处可溯源）
+├── source-ref/   v3.5.46 真实源码备份（28 个文件，含 Vue MIT LICENSE 与溯源说明）
 ├── html-tpl/     封面生成模板（改标题后可重新截图）
 ├── xiaohongshu/  小红书图文文案（12 篇，含标题/正文/标签）
 ├── douyin/       抖音口播脚本（12 条，45~60 秒/条）
@@ -81,6 +81,6 @@ node ~/.agents/skills/wechat-publish/scripts/wx.mjs publish articles/01-reactive
 
 ## 六、源码摘录规范（本系列约定）
 
-- 所有源码摘录均可在 `source-ref/` 对应路径找到原文（与 GitHub `vuejs/core` tag `v3.5.46` 一致）；
+- 所有源码摘录均可在 `source-ref/` 对应路径找到原文（与 GitHub `vuejs/core` tag `v3.5.46` 一致）；该目录遵循 Vue 的 MIT 许可，条款见 `source-ref/LICENSE`，溯源说明见 `source-ref/README.md`；
 - 摘录处标注了文件与行号区间（如 `baseHandlers.ts L112`），长函数以「节选」标注删减；
 - mini 实现刻意做了简化（如用 Set 代替 Dep/Link 链表），文章中均已显式声明简化点与真实实现的差异。
